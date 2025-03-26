@@ -1,6 +1,6 @@
 # Predicting Traffic Incident Severity Based on Weather and Time Factors
 
-![Alt text]("images\accidentseverityprediction.webp")
+![Alt text]("https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/accidentseverityprediction.webpp")
 
 
 
@@ -151,4 +151,5 @@ This dataset will be used for various analyses related to traffic accidents, inc
 
 ## Exploratory Data Analysis
  - Bar plot for categorical columns:
- ![alt text]("images\barplotforcat_columns.png")
+ 
+ ![alt text]("https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/barplotforcat_columns.png")
