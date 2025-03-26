@@ -1,7 +1,6 @@
 # Predicting Traffic Incident Severity Based on Weather and Time Factors
 
-![Alt text]("https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/accidentseverityprediction.webpp")
-
+![Alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/accidentseverityprediction.webp)
 
 
 ## Table of Contents
@@ -41,9 +40,8 @@ This project aims to create a solution that not only reduces the severity of tra
 
 
 ## Stakeholders
-
 |Stakeholder	            |      Interest                                        |
-|----------------------------------------------------------------------------------|
+|---------------------------|------------------------------------------------------|
 |Transportation Authorities | to optimize response times                           |
 |Emergency Services         | prepare resources and prioritize high-risk incidents.|
 |Public and Drivers         | increased safety, fewer severe accidents             |
@@ -151,5 +149,6 @@ This dataset will be used for various analyses related to traffic accidents, inc
 
 ## Exploratory Data Analysis
  - Bar plot for categorical columns:
- 
- ![alt text]("https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/barplotforcat_columns.png")
+
+ ![alt text]("![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)
+")
