@@ -150,5 +150,4 @@ This dataset will be used for various analyses related to traffic accidents, inc
 ## Exploratory Data Analysis
  - Bar plot for categorical columns:
 
- ![alt text]("![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)
-")
+![alt text]("![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)")
