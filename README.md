@@ -1,6 +1,6 @@
 # Predicting Traffic Incident Severity Based on Weather and Time Factors
 
-![Alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/accidentseverityprediction.webp)
+![Alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Gemini_Generated_Image_sblf0ysblf0ysblf.jpg?raw=true)
 
 
 ## Table of Contents
@@ -149,5 +149,39 @@ This dataset will be used for various analyses related to traffic accidents, inc
 
 ## Exploratory Data Analysis
  - Bar plot for categorical columns:
+   Frequency Distribution
 
-![alt text]("![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)")
+![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)
+
+ - Collision severity across time categories: 
+   Time category "2:01 pm to 6:00 pm" is the most critical period
+  
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/collision%20severity%20accross%20time%20categories.png?raw=true)
+
+ - Direction of parties involved in accidents
+
+  Across all directions of travel (West, East, North, South), "Mild" is the most common collision severity
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Direction%20of%20travel%20for%20party%201%20by%20collision%20severity.png?raw=true)
+
+- Effect of pedestrian action on collision severity
+
+  No Pedestrian Involved dominates the data
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Effect%20of%20pedestrian%20actions%20on%20collision%20severity.png?raw=true)
+
+- Distribution of accidents over the year.
+
+  There appears to be a noticeable increase in accidents in the later years (around 2017-2019)
+
+  There's a visible drop in accidents in the most recent years (2020-2023)
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Distribution%20of%20accidents%20by%20month,year%20and%20week.png?raw=true)
+
+- weather and collision severity
+
+  While seemingly safe, clear weather can still lead to a high number of collisions
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Collision%20severity%20by%20weather%20conditions.png?raw=true)
+
+
