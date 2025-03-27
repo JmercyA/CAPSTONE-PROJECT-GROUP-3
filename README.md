@@ -1,6 +1,6 @@
 # Predicting Traffic Incident Severity Based on Weather and Time Factors
 
-![Alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Gemini_Generated_Image_sblf0ysblf0ysblf.jpg?raw=true)
+![Alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/0_ipvJpQLmhlrch90Q.jpg?raw=true)
 
 
 ## Table of Contents
