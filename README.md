@@ -11,16 +11,16 @@
 - [Data cleaning](#Data_cleaning)  
 - [EDA](#Exploratory_Data_analysis)  
 - [Modelling](#Modelling)  
-- [Future Importance](#future-importance)  
+- [Feature Importance](#feature-importance)  
 - [Model tuning](#model_tuning)  
 - [Recommendations](#model_tuning)    
 
-# Project description.
+## Project description.
 
 The goal of this project is to develop a predictive model that can estimate the severity of traffic incidents based on various factors such as weather conditions (rain, snow, fog, etc.) and time-related elements (time of day, day of the week, and holidays). The model will utilize historical traffic incident data from San Fransisco open data source, weather patterns, and temporal factors to predict the likelihood of incidents leading to Mild and severe outcomes, such as injuries or fatalities, rather than minor disruptions. This will help transportation authorities, emergency services, and city planners make data-driven decisions, optimize response strategies, and improve public safety.
 
 
-# Business Understanding
+## Business Understanding
 
 aiming to reduce the devastating consequences of road traffic accidents,this project employs machine learning to predict accident severity. The model, trained on data including vehicle type,casualty details,the type of the road, the location, the weather at the time of the accident just to mention a few, that can be used to inform proactive strategies aimed at reducing fatalities and injuries.
 
@@ -183,5 +183,101 @@ This dataset will be used for various analyses related to traffic accidents, inc
   While seemingly safe, clear weather can still lead to a high number of collisions
 
 ![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Collision%20severity%20by%20weather%20conditions.png?raw=true)
+
+
+## Hypothesis testing
+Chi-Square Test for Weather and Collision Severity;
+
+-  Weather significantly affects collision severity.
+
+ANOVA for Road Surface and Number of Injuries;
+
+- Road surface conditions affect the number of injuries.
+
+
+
+## Modeling
+
+### Models used
+ - RandomForest Model
+ - Logistic Regression Model
+ - SVC model
+ - KNeighbours Classifier
+ - XGBoost Model
+
+### Defining the target and the features
+
+- Collision_severity is the target columns
+
+### Label Encoding the target column
+
+- Collision_severity values 'Mild' and 'Severe' are encoded to 0 and 1
+
+### Preprocessing Pipeline;
+
+- scaling the data
+- Onehot encoding the categorical columns
+
+### Model training
+- spliting data into training and test set 80% for training and 20% for testing
+- helper function to train and evaluate the models
+
+
+### metrics used:
+
+|Metric	    |                                               Reason                                          |
+|-----------|-----------------------------------------------------------------------------------------------|
+|Precission | Important when the cost of false positives is high (e.g., predicting "Severe" incorrectly).   |
+|Recall 	  |Important for ensuring minority class detection (e.g., identifying "Severe" collisions).       | 
+|F1-Score	  |Balance precision and recall for imbalanced data.                                              |
+
+### Results;
+
+This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Score** for various models used in predicting collision severity. These metrics were chosen to evaluate the models effectively, especially in cases of class imbalance.
+
+| Model                        | Accuracy | Precision (Mild) | Recall (Mild) | F1-Score (Mild) | Precision (Severe) | Recall (Severe) | F1-Score (Severe) |
+|------------------------------|----------|------------------|---------------|-----------------|--------------------|-----------------|-------------------|
+| Random Forest                 | 0.64     | 0.68             | 0.82          | 0.74            | 0.49               | 0.31            | 0.38              |
+| Logistic Regression           | 0.66     | 0.68             | 0.89          | 0.77            | 0.56               | 0.24            | 0.34              |
+| Support Vector Classifier     | 0.66     | 0.67             | 0.91          | 0.77            | 0.55               | 0.20            | 0.30              |
+| k-Nearest Neighbors           | 0.61     | 0.67             | 0.76          | 0.72            | 0.44               | 0.33            | 0.38              |
+| XGBoost                       | 0.66     | 0.69             | 0.87          | 0.77            | 0.55               | 0.29            | 0.38              |
+
+
+### Feature Importance
+
+- Since both Random Forest and XGBoost are tree-based models, they inherently provide a measure of feature importance based on how much each feature contributes to reducing uncertainty
+- After reviewing the top features from both models, we selected the following features for further modeling: 'distance', 'number_injured', 'day_of_week', 'party1_dir_of_travel', 'number_killed', 'type_of_collision', and 'party2_dir_of_travel'. 
+
+### Results after feature importance:
+
+| Model               | Accuracy | Precision (Mild) | Recall (Mild) | F1-Score (Mild) | Precision (Severe) | Recall (Severe) | F1-Score (Severe) |
+|---------------------|----------|------------------|---------------|-----------------|--------------------|-----------------|-------------------|
+| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
+| XGBoost             | 0.65     | 0.67             | 0.91          | 0.77            | 0.53               | 0.17            | 0.26              |
+
+
+- Overall, both Logistic Regression and XGBoost perform better with Mild collision predictions but still miss a significant number of Severe collisions. Improvements in identifying Severe cases could involve tuning the models further or using specialized techniques for class imbalance, such as oversampling Severe cases or using weighted loss functions.
+
+### Hyperparameter tuning
+ - Gridsearch
+
+ - Logistic Regression - Best Parameters from GridSearchCV: {'model__C': 1, 'model__max_iter': 500, 'model__solver': 'lbfgs'}
+
+ - XGBoost - Best Parameters from GridSearchCV: {'model__learning_rate': 0.01, 'model__max_depth': 3, 'model__n_estimators': 50, 'model__subsample': 0.8}
+
+### Results:
+
+| Model               | Accuracy | Precision (Mild) | Recall (Mild) | F1-Score (Mild) | Precision (Severe) | Recall (Severe) | F1-Score (Severe) |
+|---------------------|----------|------------------|---------------|-----------------|--------------------|-----------------|-------------------|
+| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
+| XGBoost             | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
+
+
+- both Logistic Regression and XGBoost perform similarly, with good performance on Mild collisions but significant difficulty with Severe collisions. The models could be improved for Severe collision prediction with further tuning, resampling techniques, or alternative modeling approaches.
+
+
+
+
 
 
