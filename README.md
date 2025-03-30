@@ -196,7 +196,7 @@ This dataset will be used for various analyses related to traffic accidents, inc
 
   While seemingly safe, clear weather can still lead to a high number of collisions
 
-![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Collision%20severity%20by%20weather%20conditions.png?raw=true)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/collisionseveritybyweatherconditions.png?raw=true)
 
 
 
