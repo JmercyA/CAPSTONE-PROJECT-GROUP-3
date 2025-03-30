@@ -151,24 +151,24 @@ This dataset will be used for various analyses related to traffic accidents, inc
  - Bar plot for categorical columns:
    Frequency Distribution
 
-![alt text](https://raw.githubusercontent.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/main/images/barplotforcat_columns.png)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Barplotforcatcolumns.png?raw=true)
 
  - Collision severity across time categories: 
    Time category "2:01 pm to 6:00 pm" is the most critical period
   
-![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/collision%20severity%20accross%20time%20categories.png?raw=true)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/collisionseeverityacrosstime.png?raw=true)
 
  - Direction of parties involved in accidents
 
   Across all directions of travel (West, East, North, South), "Mild" is the most common collision severity
 
-![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Direction%20of%20travel%20for%20party%201%20by%20collision%20severity.png?raw=true)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Directionoftarvelforparty1bycollisionseverity.png?raw=true)
 
 - Effect of pedestrian action on collision severity
 
   No Pedestrian Involved dominates the data
 
-![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Effect%20of%20pedestrian%20actions%20on%20collision%20severity.png?raw=true)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/effectofpedestrianactionsoncollisionseverity.png?raw=true)
 
 - Distribution of accidents over the year.
 
@@ -176,13 +176,28 @@ This dataset will be used for various analyses related to traffic accidents, inc
 
   There's a visible drop in accidents in the most recent years (2020-2023)
 
-![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Distribution%20of%20accidents%20by%20month,year%20and%20week.png?raw=true)
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/numberofaccidentsperyear.png?raw=true)
+
+
+-Distribution of accidents by month.
+
+ There appears to be a noticeable increase in accidents in the month of October.
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/numberofaccidentspermonth.png?raw=true)
+
+
+-Distribution of accidents by day of the week.
+
+ There appears to be a noticeable increase in accidents on Friday.
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/numberofaccidentsbydayoftheweek.png?raw=true)
 
 - weather and collision severity
 
   While seemingly safe, clear weather can still lead to a high number of collisions
 
 ![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Collision%20severity%20by%20weather%20conditions.png?raw=true)
+
 
 
 ## Hypothesis testing
