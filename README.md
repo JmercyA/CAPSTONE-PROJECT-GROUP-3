@@ -1,4 +1,4 @@
-# Predicting Traffic Incident Severity Based on Weather and Time Factors
+# Predicting Traffic Incident Severity 
 
 ![Alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/0_ipvJpQLmhlrch90Q.jpg?raw=true)
 
@@ -276,6 +276,23 @@ This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Scor
 
 - both Logistic Regression and XGBoost perform similarly, with good performance on Mild collisions but significant difficulty with Severe collisions. The models could be improved for Severe collision prediction with further tuning, resampling techniques, or alternative modeling approaches.
 
+### Recommendations and Next steps
+
+- Advanced Feature Engineering: Investigate potential feature transformations, interaction terms, and non-linear features that might better represent the underlying patterns in the data. Creating new features or aggregating features could improve model performance.
+
+- try more sophisticated, non-linear methods like tree-based models or ensembles.
+
+- Tuning Regularization: For some models (like neural networks or linear models), experiment with L1/L2 regularization to control overfitting.
+
+- Feature Transformation: Experiment with non-linear transformations of your features (e.g., log transformations, polynomial features, or PCA for dimensionality reduction) to improve how the model learns from the data.
+
+- onclusion Based on EDA.
+
+We have noted that environmental factors have a limited contribution to occurrence of accidents and to the severity. Human behaviour or features influenced by or correlated with human behaviour. e.g. month (seasonality influence on human behaviour), type of collision, pedestrian action and intersection are a major determinant of accident occurrence and accident severity.
+
+- Recommendations based on EDA.
+
+Jurisdictions should therefore invest more in human behaviour change strategies in order to reduce occurrence of accidents and their severity. The may include pedestrian and driver sensitization on road use, fines and penalties on risky behaviours and structuring driver courses and /or refresher courses to emphasise on safe road use.
 
 
 
