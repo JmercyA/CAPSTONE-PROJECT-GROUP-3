@@ -153,6 +153,12 @@ This dataset will be used for various analyses related to traffic accidents, inc
    - the target colums cateogies are reduced from 5 to 2 i.e Mild and Severe.
 
 ## Exploratory Data Analysis
+- Geospatial Mapping.
+
+![alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/Severity-based%20Geospatial%20map.png?raw=true)
+
+The map displays the geographical distribution of traffic incidents in San Francisco with the red points highlighting where fatal incidents occur.The red points are clustered in mostly intersections indcating these as black spots.
+
  - Bar plot for categorical columns:
    Frequency Distribution
 
