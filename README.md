@@ -1,4 +1,4 @@
-# Predicting Traffic Incident Severity 
+# Predicting Traffic Accident Severity 
 
 ![Alt text](https://github.com/JmercyA/CAPSTONE-PROJECT-GROUP-3/blob/main/images/0_ipvJpQLmhlrch90Q.jpg?raw=true)
 
@@ -17,8 +17,13 @@
 
 ## Project description.
 
-The goal of this project is to develop a predictive model that can estimate the severity of traffic incidents based on various factors such as weather conditions (rain, snow, fog, etc.) and time-related elements (time of day, day of the week, and holidays). The model will utilize historical traffic incident data from San Fransisco open data source, weather patterns, and temporal factors to predict the likelihood of incidents leading to Mild and severe outcomes, such as injuries or fatalities, rather than minor disruptions. This will help transportation authorities, emergency services, and city planners make data-driven decisions, optimize response strategies, and improve public safety.
+Traffic accidents are a widespread global concern, often leading to devastating consequences such as injuries, fatalities, and significant financial losses. These incidents are influenced by a variety of environmental and temporal factors, and understanding the role these variables play in determining accident severity can be critical for addressing public safety challenges.
 
+Factors like adverse weather conditions; rain, snow, fog, and other phenomena can impair visibility, reduce road friction, and compromise vehicle control. Similarly, time-related factors such as the time of day, day of the week, or holidays significantly alter traffic flow and driver behavior. For instance, peak commuting hours can increase congestion-related risks, while late-night driving may involve factors like fatigue or impaired judgment. The interplay between these variables creates a complex web of influences that must be untangled to predict accident severity.
+
+This project seeks to address this complexity through the application of machine learning, aiming to develop a model capable of predicting traffic incident severity based on those factors. Using historical traffic data from the San Francisco open data platform, the model is trained on features such as meteorological conditions, time-based variables, and other indicators that influence accident outcomes. Focusing on differentiating mild outcomes from severe ones such as injuries or fatalities the model aims to provide transportation authorities, emergency responders, and city planners with actionable insights to improve resource allocation and public safety interventions.
+
+This initiative is not just about reducing the severity of traffic accidents; it also addresses the broader goal of integrating data science into urban planning and public safety decision-making. By uncovering hidden patterns and relationships that traditional methods might overlook, this project has the potential to create a scalable, impactful solution for improving traffic safety. With far-reaching benefits for communities, infrastructure, and emergency services, the findings could serve as a model for other cities worldwide. The ultimate aim is to use technology to not only save lives and reduce injuries but also contribute to safer and more efficient transportation systems overall.
 
 ## Business Understanding
 
@@ -268,8 +273,8 @@ This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Scor
 
 | Model               | Accuracy | Precision (Mild) | Recall (Mild) | F1-Score (Mild) | Precision (Severe) | Recall (Severe) | F1-Score (Severe) |
 |---------------------|----------|------------------|---------------|-----------------|--------------------|-----------------|-------------------|
-| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
-| XGBoost             | 0.65     | 0.67             | 0.91          | 0.77            | 0.53               | 0.17            | 0.26              |
+| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.14            | 0.23              |
+| XGBoost             | 0.65     | 0.66             | 0.92          | 0.77            | 0.56               | 0.17            | 0.26              |
 
 
 - Overall, both Logistic Regression and XGBoost perform better with Mild collision predictions but still miss a significant number of Severe collisions. Improvements in identifying Severe cases could involve tuning the models further or using specialized techniques for class imbalance, such as oversampling Severe cases or using weighted loss functions.
@@ -285,8 +290,8 @@ This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Scor
 
 | Model               | Accuracy | Precision (Mild) | Recall (Mild) | F1-Score (Mild) | Precision (Severe) | Recall (Severe) | F1-Score (Severe) |
 |---------------------|----------|------------------|---------------|-----------------|--------------------|-----------------|-------------------|
-| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
-| XGBoost             | 0.66     | 0.66             | 0.95          | 0.78            | 0.60               | 0.13            | 0.22              |
+| Logistic Regression | 0.66     | 0.66             | 0.95          | 0.78            | 0.64               | 0.14            | 0.23              |
+| XGBoost             | 0.66     | 0.66             | 0.95          | 0.78            | 0.64               | 0.14            | 0.23              |
 
 
 - both Logistic Regression and XGBoost perform similarly, with good performance on Mild collisions but significant difficulty with Severe collisions. The models could be improved for Severe collision prediction with further tuning, resampling techniques, or alternative modeling approaches.
@@ -301,7 +306,7 @@ This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Scor
 
 - Feature Transformation: Experiment with non-linear transformations of your features (e.g., log transformations, polynomial features, or PCA for dimensionality reduction) to improve how the model learns from the data.
 
-- onclusion Based on EDA.
+- Conclusion Based on EDA.
 
 We have noted that environmental factors have a limited contribution to occurrence of accidents and to the severity. Human behaviour or features influenced by or correlated with human behaviour. e.g. month (seasonality influence on human behaviour), type of collision, pedestrian action and intersection are a major determinant of accident occurrence and accident severity.
 
