@@ -312,6 +312,20 @@ This table summarizes the **Accuracy**, **Precision**, **Recall**, and **F1-Scor
 
 - Feature Transformation: Experiment with non-linear transformations of your features (e.g., log transformations, polynomial features, or PCA for dimensionality reduction) to improve how the model learns from the data.
 
+- Improve Severe Incident Prediction: Explore ensemble methods or deep learning 
+techniques to enhance recall for severe cases. Incorporate additional data points, 
+such as driver behavior or road infrastructure details, to enrich the model.
+
+- Expand Scope: Validate the model across different cities to assess scalability and 
+adaptability. Integrate these insights into real-time traffic management systems for 
+immediate safety interventions
+
+- Application to Public Safety: Use predictions to inform proactive measures like 
+targeted safety campaigns during high-risk periods (e.g., Fridays, peak hours) and 
+locations prone to broadside collisions. Equip emergency responders with severity 
+predictions for optimized resource allocation.
+
+
 - Conclusion Based on EDA.
 
 We have noted that environmental factors have a limited contribution to occurrence of accidents and to the severity. Human behaviour or features influenced by or correlated with human behaviour. e.g. month (seasonality influence on human behaviour), type of collision, pedestrian action and intersection are a major determinant of accident occurrence and accident severity.
@@ -319,6 +333,11 @@ We have noted that environmental factors have a limited contribution to occurren
 - Recommendations based on EDA.
 
 Jurisdictions should therefore invest more in human behaviour change strategies in order to reduce occurrence of accidents and their severity. The may include pedestrian and driver sensitization on road use, fines and penalties on risky behaviours and structuring driver courses and /or refresher courses to emphasise on safe road use.
+
+- Application to Public Safety: Use predictions to inform proactive measures like 
+targeted safety campaigns during high-risk periods (e.g., Fridays, peak hours) and 
+locations prone to broadside collisions. Equip emergency responders with severity 
+predictions for optimized resource allocation.
 
 
 
